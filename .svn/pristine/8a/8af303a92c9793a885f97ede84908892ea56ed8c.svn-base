@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="PCSSystem.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ServerStatus" Type="System.String" Scope="User">
+      <Value Profile="(Default)">TESTING</Value>
+    </Setting>
+    <Setting Name="DLPTime" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="FolderExport" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Sharing\ajrfiles\</Value>
+    </Setting>
+    <Setting Name="Maxrow" Type="System.String" Scope="User">
+      <Value Profile="(Default)">20</Value>
+    </Setting>
+    <Setting Name="ConTime" Type="System.String" Scope="User">
+      <Value Profile="(Default)">600</Value>
+    </Setting>
+    <Setting Name="ConnString" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Data Source=sbm-vmsqlsqa03; Initial Catalog=ADVJEQDB; User Id=sa; Password=admin212</Value>
+    </Setting>
+    <Setting Name="ConnStringQA" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Data Source=sbm-vmsqlsqa03; Initial Catalog=ADVJEQDB; User Id=sa; Password=admin212</Value>
+    </Setting>
+    <Setting Name="AppPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\172.18.100.125\apps_datastore\PCS\QA</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

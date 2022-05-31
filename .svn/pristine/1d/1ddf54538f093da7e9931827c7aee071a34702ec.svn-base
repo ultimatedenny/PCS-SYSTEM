@@ -1,0 +1,747 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{48F40DAF-2466-4D68-B3CC-759F3B7E37ED}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PCSSystem</RootNamespace>
+    <AssemblyName>PCSSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icon_220.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClosedXML, Version=0.95.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ClosedXML.0.95.4\lib\net40\ClosedXML.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.7.2.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
+      <HintPath>..\packages\DocumentFormat.OpenXml.2.7.2\lib\net40\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelNumberFormat, Version=1.0.10.0, Culture=neutral, PublicKeyToken=23c6f5d73be07eca, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelNumberFormat.1.0.10\lib\net20\ExcelNumberFormat.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationBlocks.Data">
+      <HintPath>..\..\..\..\..\Desktop\MyPacking2018\MyPacking\MyPacking\bin\Debug\Microsoft.ApplicationBlocks.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ASP\FJobRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASP\FJobRequest.Designer.cs">
+      <DependentUpon>FJobRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASP\FLockproduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASP\FLockproduct.Designer.cs">
+      <DependentUpon>FLockproduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASP\FMemail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASP\FMemail.Designer.cs">
+      <DependentUpon>FMemail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASP\FMexclution.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASP\FMexclution.Designer.cs">
+      <DependentUpon>FMexclution.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASP\FMInitialPart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASP\FMInitialPart.Designer.cs">
+      <DependentUpon>FMInitialPart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASP\FMSubCat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASP\FMSubCat.Designer.cs">
+      <DependentUpon>FMSubCat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASP\FRepPP57.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASP\FRepPP57.Designer.cs">
+      <DependentUpon>FRepPP57.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASP\FUplDataPP57.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASP\FUplDataPP57.Designer.cs">
+      <DependentUpon>FUplDataPP57.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASP\MyFunction.cs" />
+    <Compile Include="Common.cs" />
+    <Compile Include="database.cs" />
+    <Compile Include="FAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAbout.designer.cs">
+      <DependentUpon>FAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FActLine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FActLine.Designer.cs">
+      <DependentUpon>FActLine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FCap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FCap.Designer.cs">
+      <DependentUpon>FCap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FGlobal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FGlobal.Designer.cs">
+      <DependentUpon>FGlobal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FSPC_FG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FSPC_FG.Designer.cs">
+      <DependentUpon>FSPC_FG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master Data\FIndicatorFix.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master Data\FIndicatorFix.Designer.cs">
+      <DependentUpon>FIndicatorFix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master Data\FIndicationType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master Data\FIndicationType.Designer.cs">
+      <DependentUpon>FIndicationType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master Data\FBackgroundImprovement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master Data\FBackgroundImprovement.Designer.cs">
+      <DependentUpon>FBackgroundImprovement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master Data\FFGStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master Data\FFGStatus.Designer.cs">
+      <DependentUpon>FFGStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master Data\FChangeItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master Data\FChangeItem.Designer.cs">
+      <DependentUpon>FChangeItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master Data\FIndicatorList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master Data\FIndicatorList.Designer.cs">
+      <DependentUpon>FIndicatorList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master Data\FIndList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master Data\FIndList.Designer.cs">
+      <DependentUpon>FIndList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master Data\FLotConfirmSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master Data\FLotConfirmSchedule.Designer.cs">
+      <DependentUpon>FLotConfirmSchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master Data\FLotConflictInd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master Data\FLotConflictInd.Designer.cs">
+      <DependentUpon>FLotConflictInd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master Data\FNewLotInd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master Data\FNewLotInd.Designer.cs">
+      <DependentUpon>FNewLotInd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master Data\FReasonClose.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master Data\FReasonClose.Designer.cs">
+      <DependentUpon>FReasonClose.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master Data\FProductGrouping.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master Data\FProductGrouping.Designer.cs">
+      <DependentUpon>FProductGrouping.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master Data\FLinePriority.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master Data\FLinePriority.Designer.cs">
+      <DependentUpon>FLinePriority.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master Data\FLineLeader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master Data\FLineLeader.Designer.cs">
+      <DependentUpon>FLineLeader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master Data\FLotInd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master Data\FLotInd.Designer.cs">
+      <DependentUpon>FLotInd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master Data\FLotNo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master Data\FLotNo.Designer.cs">
+      <DependentUpon>FLotNo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master Data\FModel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master Data\FModel.Designer.cs">
+      <DependentUpon>FModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master Data\FNonWorkDay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master Data\FNonWorkDay.Designer.cs">
+      <DependentUpon>FNonWorkDay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FSelFG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FSelFG.Designer.cs">
+      <DependentUpon>FSelFG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master Data\FAffChngd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master Data\FAffChngd.Designer.cs">
+      <DependentUpon>FAffChngd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master Data\FChangeType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master Data\FChangeType.Designer.cs">
+      <DependentUpon>FChangeType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master Data\FLockPrdt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master Data\FLockPrdt.Designer.cs">
+      <DependentUpon>FLockPrdt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master Data\FProbOrigin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master Data\FProbOrigin.Designer.cs">
+      <DependentUpon>FProbOrigin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master Data\FProdnDay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master Data\FProdnDay.Designer.cs">
+      <DependentUpon>FProdnDay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master Data\FSafStk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master Data\FSafStk.Designer.cs">
+      <DependentUpon>FSafStk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master Data\FNewSelFG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master Data\FNewSelFG.Designer.cs">
+      <DependentUpon>FNewSelFG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master Data\FSPCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master Data\FSPCategory.Designer.cs">
+      <DependentUpon>FSPCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\FAddJR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\FAddJR.Designer.cs">
+      <DependentUpon>FAddJR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\FAJRList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\FAJRList.Designer.cs">
+      <DependentUpon>FAJRList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\FApproval.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\FApproval.Designer.cs">
+      <DependentUpon>FApproval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\FBalJR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\FBalJR.Designer.cs">
+      <DependentUpon>FBalJR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\FCustMassageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\FCustMassageBox.Designer.cs">
+      <DependentUpon>FCustMassageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\FDLPDetailPart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\FDLPDetailPart.Designer.cs">
+      <DependentUpon>FDLPDetailPart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\FOstdReq.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\FOstdReq.Designer.cs">
+      <DependentUpon>FOstdReq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\FTobeJEQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\FTobeJEQ.Designer.cs">
+      <DependentUpon>FTobeJEQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\FUplData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\FUplData.Designer.cs">
+      <DependentUpon>FUplData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master Data\FShiftWC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master Data\FShiftWC.Designer.cs">
+      <DependentUpon>FShiftWC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\FDailyPlan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\FDailyPlan.Designer.cs">
+      <DependentUpon>FDailyPlan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FError.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FError.Designer.cs">
+      <DependentUpon>FError.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLogin.designer.cs">
+      <DependentUpon>FLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\FMasCapSch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\FMasCapSch.Designer.cs">
+      <DependentUpon>FMasCapSch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\FMasCapSchLine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\FMasCapSchLine.Designer.cs">
+      <DependentUpon>FMasCapSchLine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\FMasterCap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\FMasterCap.Designer.cs">
+      <DependentUpon>FMasterCap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master Data\FNonWD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master Data\FNonWD.Designer.cs">
+      <DependentUpon>FNonWD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master Data\FRouteMP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master Data\FRouteMP.Designer.cs">
+      <DependentUpon>FRouteMP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master Data\FSAPSch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master Data\FSAPSch.Designer.cs">
+      <DependentUpon>FSAPSch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master Data\FSAPShift.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master Data\FSAPShift.Designer.cs">
+      <DependentUpon>FSAPShift.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master Data\FTobeBF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master Data\FTobeBF.Designer.cs">
+      <DependentUpon>FTobeBF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FInfo.Designer.cs">
+      <DependentUpon>FInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="test.Designer.cs">
+      <DependentUpon>test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserAccount.cs" />
+    <EmbeddedResource Include="ASP\FJobRequest.resx">
+      <DependentUpon>FJobRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASP\FLockproduct.resx">
+      <DependentUpon>FLockproduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASP\FMemail.resx">
+      <DependentUpon>FMemail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASP\FMexclution.resx">
+      <DependentUpon>FMexclution.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASP\FMInitialPart.resx">
+      <DependentUpon>FMInitialPart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASP\FMSubCat.resx">
+      <DependentUpon>FMSubCat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASP\FRepPP57.resx">
+      <DependentUpon>FRepPP57.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASP\FUplDataPP57.resx">
+      <DependentUpon>FUplDataPP57.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FAbout.resx">
+      <DependentUpon>FAbout.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FActLine.resx">
+      <DependentUpon>FActLine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FCap.resx">
+      <DependentUpon>FCap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FGlobal.resx">
+      <DependentUpon>FGlobal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FSPC_FG.resx">
+      <DependentUpon>FSPC_FG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master Data\FIndicatorFix.resx">
+      <DependentUpon>FIndicatorFix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master Data\FIndicationType.resx">
+      <DependentUpon>FIndicationType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master Data\FBackgroundImprovement.resx">
+      <DependentUpon>FBackgroundImprovement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master Data\FFGStatus.resx">
+      <DependentUpon>FFGStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master Data\FChangeItem.resx">
+      <DependentUpon>FChangeItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master Data\FIndicatorList.resx">
+      <DependentUpon>FIndicatorList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master Data\FIndList.resx">
+      <DependentUpon>FIndList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master Data\FLotConfirmSchedule.resx">
+      <DependentUpon>FLotConfirmSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master Data\FLotConflictInd.resx">
+      <DependentUpon>FLotConflictInd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master Data\FNewLotInd.resx">
+      <DependentUpon>FNewLotInd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master Data\FReasonClose.resx">
+      <DependentUpon>FReasonClose.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master Data\FProductGrouping.resx">
+      <DependentUpon>FProductGrouping.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master Data\FLinePriority.resx">
+      <DependentUpon>FLinePriority.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master Data\FLineLeader.resx">
+      <DependentUpon>FLineLeader.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master Data\FLotInd.resx">
+      <DependentUpon>FLotInd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master Data\FLotNo.resx">
+      <DependentUpon>FLotNo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master Data\FModel.resx">
+      <DependentUpon>FModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master Data\FNonWorkDay.resx">
+      <DependentUpon>FNonWorkDay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FSelFG.resx">
+      <DependentUpon>FSelFG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master Data\FAffChngd.resx">
+      <DependentUpon>FAffChngd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master Data\FChangeType.resx">
+      <DependentUpon>FChangeType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master Data\FLockPrdt.resx">
+      <DependentUpon>FLockPrdt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master Data\FProbOrigin.resx">
+      <DependentUpon>FProbOrigin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master Data\FProdnDay.resx">
+      <DependentUpon>FProdnDay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master Data\FSafStk.resx">
+      <DependentUpon>FSafStk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master Data\FNewSelFG.resx">
+      <DependentUpon>FNewSelFG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master Data\FSPCategory.resx">
+      <DependentUpon>FSPCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\FAddJR.resx">
+      <DependentUpon>FAddJR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\FAJRList.resx">
+      <DependentUpon>FAJRList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\FApproval.resx">
+      <DependentUpon>FApproval.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\FBalJR.resx">
+      <DependentUpon>FBalJR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\FCustMassageBox.resx">
+      <DependentUpon>FCustMassageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\FDLPDetailPart.resx">
+      <DependentUpon>FDLPDetailPart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\FOstdReq.resx">
+      <DependentUpon>FOstdReq.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\FTobeJEQ.resx">
+      <DependentUpon>FTobeJEQ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\FUplData.resx">
+      <DependentUpon>FUplData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master Data\FShiftWC.resx">
+      <DependentUpon>FShiftWC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\FDailyPlan.resx">
+      <DependentUpon>FDailyPlan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FError.resx">
+      <DependentUpon>FError.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FInfo.resx">
+      <DependentUpon>FInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLogin.resx">
+      <DependentUpon>FLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\FMasCapSch.resx">
+      <DependentUpon>FMasCapSch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\FMasCapSchLine.resx">
+      <DependentUpon>FMasCapSchLine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\FMasterCap.resx">
+      <DependentUpon>FMasterCap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master Data\FNonWD.resx">
+      <DependentUpon>FNonWD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master Data\FRouteMP.resx">
+      <DependentUpon>FRouteMP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master Data\FSAPSch.resx">
+      <DependentUpon>FSAPSch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master Data\FSAPShift.resx">
+      <DependentUpon>FSAPShift.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master Data\FTobeBF.resx">
+      <DependentUpon>FTobeBF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="test.resx">
+      <DependentUpon>test.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icon_220.ico" />
+    <Content Include="Resources\del.png" />
+    <None Include="Resources\icons8_file_16.png" />
+    <None Include="Resources\details_close.png" />
+    <None Include="Resources\redclose.png" />
+    <None Include="Resources\uploadpcs.png" />
+    <None Include="Resources\del1.png" />
+    <None Include="Resources\Csv.png" />
+    <None Include="Resources\exp.png" />
+    <None Include="Resources\eprt.png" />
+    <None Include="Resources\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
